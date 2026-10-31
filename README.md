@@ -44,7 +44,36 @@ def resgatar_livros():
       print(f"{prefixo}{livro}['titulo']")
       print(f"  Autor: {livro['autor']}) | Ano: {livro ['ano']}) | " f"Disponível: {livro['disponivel']} ") 
 
+     def escolher_livro():
+       titulo = ler_texto(mensagem).lower()
+       for livro in livros:
+           if livro["titulo"].lower() == titulo 
+               return livro 
+      return none 
+
+    def cadastrar_livro():
+      print("/n===cadastro de livro===")
+      titulo = ler_texto("Título:  ")
+      autor = ler_texto("Autor:   ")
+      ano = ler_ano( "Ano:    ")
+
+      livro = { "titulo" : titulo, "autor" : autor, "ano" : ano, "disponivel" : "Sim", }
+
+      livros.append(livro)
+      salvar.livros()
+      print(f{"Livro '{titulo}' cadastrado com sucesso!")
+
+
+    
+
       
+
+      
+
+        
+       
+       
+       
       
       
        
