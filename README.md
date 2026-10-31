@@ -64,6 +64,63 @@ def resgatar_livros():
       print(f{"Livro '{titulo}' cadastrado com sucesso!")
 
 
+    def listar_livros():
+      print("\n====Lista====")
+      if not livros:
+        print("Livro não cadastrado.")
+        return
+
+    print("Ordenar por: [1] Ordem de cadastro, [2] Ordem alfabética, [3] Ano de publicação")
+    opcao = input("Escolha (enter para ordem de cadastro): " )
+    if opcao == "2" :
+       lista = sorted(livros, key=lambda 1: 1["titulo"].lower() )
+    if opcao == "3" :
+       lista = sorted(livros, key = lambda 1: 1["ano"])
+    else :
+    lista = livros 
+    
+   for i, livro in enumerate (lista, start = 1):
+     exibir_livro(livro,i)
+
+def buscar_livro():
+   print("\n======Busca=====")
+   print("Buscar por: [1] Título, [2] Autor ")
+   opcao = input("Escolha: ")
+      if opcao == "1" : 
+      campo = "titulo"
+      if opcao == "2" :
+      campo = "autor"
+      else:
+        print("Opcao Inválida!") 
+        return 
+
+termo = ler_texto("Termo de busca: ").lower()
+encontrados = [1 for 1 in livros if termo in 1[campo].lower()]
+
+if not encontrados : 
+    print("Nenhum livro encontrado para '{termo}' .")
+    return 
+
+
+print (f"\n{len(encontrados)} Os resultados são: ") 
+for i, livro in enumerate(livro, start =1):
+    exibir_livro(livro,i)
+
+
+def emprestar_livro():
+  
+  
+
+    
+    
+    
+   
+    
+
+        
+      
+
+
     
 
       
