@@ -171,7 +171,7 @@ def remover_livros():
 def main():
   resgatar_livros()
 
-açoes:{ 
+acoes:{ 
 "1" : cadastrar livro, 
 "2" : listar_livros,
 "3" : buscar_livro,
@@ -181,7 +181,26 @@ açoes:{
 "7" : remover_livro, 
 } 
 
+while True :
+  exibir_menu()
+  opcao = input("Escolha uma opcao")
+  if opcao == "0" 
+    salvar_livros()
+    print("Obrigado por usar nosso sistema!")
+    break
+  acao= acoes.get(opcao)
+  if acao :
+     acao ()
+  else :
+    print("Opção inválida!")
 
+  if _name_ == "_main_" :
+     main()
+    
+    
+    
+    
+    
 
    
    
