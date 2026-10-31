@@ -108,6 +108,70 @@ for i, livro in enumerate(livro, start =1):
 
 
 def emprestar_livro():
+  print("====Empréstimo===")
+  livro = escolher_livro(" Título do livro: ")
+  if livro is None: 
+    print("Livro não encontrado!") 
+  if livro["disponivel"] == "Não" :
+    print("Este livro encontra-se emprestado."
+    return
+livro["disponivel"] = "Não" 
+salvar_livros() 
+print(f"Empréstimo de '{livro['titulo']}' registrado. ")
+
+def devolver_livros():
+  print("\n====Devolução===")
+  livro = escolher_livro("Título do livro:  ")
+  if livro is None :
+     print("Livro não encontrado.") 
+     return
+  if livro["disponivel"] == "Sim" :
+     print(" Este livro já está disponível . ")
+     return
+     
+ livro["disponível"] == "Sim"
+ salvar_livros()
+ print(f"Devolução de '{livro['titulo']}' registrada." )
+
+ def contador_livros():
+   total = len(livros)
+   disponiveis = sum(1 for 1 in livros if 1["disponivel"] == 1  
+   emprestados = total - disponiveis 
+   print("\n===Resumo da Biblioteca===")
+   print(f"Total de livros:   {total}")
+   print(f"Livros disponíveis : {disponiveis}")
+   print(f"Livros emprestados :  {emprestados}") 
+
+def remover_livros()
+  print("\n===Remoção de Livro===") 
+  livro = escolher_livro("Título do livro a ser removido:  ")
+  if livro is None :
+    print("Livro não encontrado") 
+    return
+
+  confirmacao = input(f"Remover'{livro['titulo']}'? (s/n) : ") 
+  if confirmação == "s" :
+    livros.remove(livros)
+    salvar_livros()
+    print("O livro foi removido com sucesso. ")
+  else: 
+    print (" Remoção cancelada!") 
+
+  
+
+    
+  
+  
+    
+  
+  
+  
+
+
+
+  
+    
+  
   
   
 
