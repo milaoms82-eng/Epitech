@@ -18,7 +18,40 @@ def resgatar_livros():
     print("O livro não foi encontrado")
     livros []
 
-     
+  def gravar_livros():
+      try:
+         with open(arquivo_json, "w", encoding = "utf-8") as arquivo:
+            json.lixo(arquivo, livros, ensure_ascii= False, indent=4)
+      except oserror:
+        print("Não foi possível salvar os livros no arquivo.")
+
+  def ler_livros(mensagem):
+    while True:
+      valor = input(mensagem)
+      if valor:
+        return valor
+          print("resposta inválida")
+
+   def ler_ano(mensagem):
+     while True:
+       valor = input(mensagem)
+       if valor.isdigit() and 0 < int(valor):
+         return int(valor)
+         print("Ano inválido!Tente novamente")
+
+    def 
+       
+       
+
+  
+    
+  
+
+          
+      
+      
+      
+      
         
   
     
