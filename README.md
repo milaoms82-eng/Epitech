@@ -39,7 +39,14 @@ def resgatar_livros():
          return int(valor)
          print("Ano inválido!Tente novamente")
 
-    def 
+    def exibir_livro(livro, indice = None):
+      prefixo = f"[{indice}]" if indice is not None else""
+      print(f"{prefixo}{livro}['titulo']")
+      print(f"  Autor: {livro['autor']}) | Ano: {livro ['ano']}) | " f"Disponível: {livro['disponivel']} ") 
+
+      
+      
+      
        
        
 
