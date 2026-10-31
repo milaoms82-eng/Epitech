@@ -142,7 +142,7 @@ def devolver_livros():
    print(f"Livros disponíveis : {disponiveis}")
    print(f"Livros emprestados :  {emprestados}") 
 
-def remover_livros()
+def remover_livros():
   print("\n===Remoção de Livro===") 
   livro = escolher_livro("Título do livro a ser removido:  ")
   if livro is None :
@@ -156,6 +156,37 @@ def remover_livros()
     print("O livro foi removido com sucesso. ")
   else: 
     print (" Remoção cancelada!") 
+
+ def exibir_menu():
+   print("===Sistema de Biblioteca===")
+   print(" 1 - Cadastrar Livro ")
+   print(" 2 - Listar Livros " ) 
+   print(" 3 - Buscar Livro" ) 
+   print(" 4 - Emprestar Livro) 
+   print(" 5 - Devolver Livro) 
+   print(" 6 - Resumo da Biblioteca " ) 
+   print(" 7 - Remover Livro " ) 
+   print(" 0 - Sair " ) 
+
+def main():
+  resgatar_livros()
+
+açoes:{ 
+"1" : cadastrar livro, 
+"2" : listar_livros,
+"3" : buscar_livro,
+"4" : emprestar_livro, 
+"5" : devolver_livro, 
+"6" : contador_livros, 
+"7" : remover_livro, 
+} 
+
+
+
+   
+   
+
+   
 
   
 
